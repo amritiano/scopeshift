@@ -1,6 +1,6 @@
 # Deployment preparation
 
-This source is prepared for a long-running Node web service. It has not been deployed. No account or charge was created. Do not publish publicly until the owner authorizes it and the release gates pass.
+The isolated browser demo is deployed at https://amritiano.github.io/scopeshift/ through the public amritiano/scopeshift repository, with the owner's authorization. GitHub Actions reported successful build and deployment after 31 passing tests. The full authenticated Node/Supabase service has not been deployed. No paid resource was provisioned.
 
 ## Configuration
 

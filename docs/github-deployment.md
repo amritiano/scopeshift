@@ -1,8 +1,8 @@
 # GitHub publication preparation
 
-The repository has a local commit history. No GitHub remote or connected GitHub account was present when this deployment preparation began. Do not interpret a local commit or workflow file as a successful push or deployment.
+Source repository: https://github.com/amritiano/scopeshift. Live browser demo: https://amritiano.github.io/scopeshift/demo/. The local main branch is synchronized with the GitHub repository; the earlier local build history remains on master.
 
-The owner subsequently selected a new public ScopeShift repository. GitHub appeared installed, but repository access tools were not available in the current session. Account access must be usable before creating that repository, pushing source and running the prepared workflow. No password or personal access token should be pasted into chat.
+The owner created the public repository and selected GitHub Actions as the Pages source. The source was uploaded using the connected GitHub account. The workflow build job has contents:read and pages:read, and the deployment job has pages:write and id-token:write. The successful deployment run is https://github.com/amritiano/scopeshift/actions/runs/45067017204. No password or personal access token was requested or placed in source.
 
 ## Browser demo on GitHub Pages
 

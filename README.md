@@ -2,6 +2,10 @@
 
 Understand the delivery consequences of a scope change before committing to it.
 
+[Live website](https://amritiano.github.io/scopeshift/) · [Try the demo](https://amritiano.github.io/scopeshift/demo/) · [GitHub repository](https://github.com/amritiano/scopeshift)
+
+The isolated browser demo is deployed on GitHub Pages. Its deployment build and 31 behavior tests passed on GitHub Actions. Persistent authenticated workspaces still require the Supabase and Node hosting setup below.
+
 A TypeScript change-control workspace for agency delivery leads: immutable scope baselines, dependency-aware scheduling, three trade-off scenarios, exact-revision approval and a traceable decision history. No paid API or LLM dependency. All sample records are synthetic.
 
 ## Run locally
