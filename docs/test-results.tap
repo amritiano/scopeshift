@@ -1,0 +1,178 @@
+TAP version 13
+# (node:17984) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: UI controller completes demo compare → approve → apply with preserved history
+ok 1 - UI controller completes demo compare → approve → apply with preserved history
+  ---
+  duration_ms: 29.2852
+  ...
+# (node:9428) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: demo storage is isolated, persistent and resettable
+ok 2 - demo storage is isolated, persistent and resettable
+  ---
+  duration_ms: 8.166
+  ...
+# Subtest: stale tabs cannot overwrite a newer demo
+ok 3 - stale tabs cannot overwrite a newer demo
+  ---
+  duration_ms: 3.2826
+  ...
+# (node:6604) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: sequential dependencies begin on the next working day
+ok 4 - sequential dependencies begin on the next working day
+  ---
+  duration_ms: 81.781
+  ...
+# Subtest: separate resources can work in parallel
+ok 5 - separate resources can work in parallel
+  ---
+  duration_ms: 0.5117
+  ...
+# Subtest: one shared resource is never overbooked
+ok 6 - one shared resource is never overbooked
+  ---
+  duration_ms: 0.8647
+  ...
+# Subtest: weekends and holidays are excluded
+ok 7 - weekends and holidays are excluded
+  ---
+  duration_ms: 1.083
+  ...
+# Subtest: cycles are rejected
+ok 8 - cycles are rejected
+  ---
+  duration_ms: 2.4485
+  ...
+# Subtest: zero capacity is explicit
+ok 9 - zero capacity is explicit
+  ---
+  duration_ms: 0.9127
+  ...
+# Subtest: missing estimates are rejected
+ok 10 - missing estimates are rejected
+  ---
+  duration_ms: 0.6839
+  ...
+# Subtest: added scope raises effort, removed scope lowers it
+ok 11 - added scope raises effort, removed scope lowers it
+  ---
+  duration_ms: 1.3667
+  ...
+# Subtest: removal preserves dependency consequences
+ok 12 - removal preserves dependency consequences
+  ---
+  duration_ms: 0.9826
+  ...
+# Subtest: deadline is tested against dependency-aware forecast
+ok 13 - deadline is tested against dependency-aware forecast
+  ---
+  duration_ms: 1.2405
+  ...
+# Subtest: money uses quarter-hour integers and half-up task rounding
+ok 14 - money uses quarter-hour integers and half-up task rounding
+  ---
+  duration_ms: 0.7806
+  ...
+# Subtest: synthetic scenarios differ and do not claim optimality
+ok 15 - synthetic scenarios differ and do not claim optimality
+  ---
+  duration_ms: 4.411
+  ...
+# Subtest: extra resource starts no earlier than availability
+ok 16 - extra resource starts no earlier than availability
+  ---
+  duration_ms: 3.9068
+  ...
+# Subtest: scheduling leaves input unchanged
+ok 17 - scheduling leaves input unchanged
+  ---
+  duration_ms: 1.0834
+  ...
+# Subtest: invalid calendar dates are rejected
+ok 18 - invalid calendar dates are rejected
+  ---
+  duration_ms: 0.228
+  ...
+# (node:16968) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: demo shell serves successfully without credentials
+ok 19 - demo shell serves successfully without credentials
+  ---
+  duration_ms: 5.0769
+  ...
+# (node:16968) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+# Subtest: development browser modules are compiled to JavaScript
+ok 20 - development browser modules are compiled to JavaScript
+  ---
+  duration_ms: 17.4996
+  ...
+# Subtest: private mode reports a setup blocker rather than faking a saved record
+ok 21 - private mode reports a setup blocker rather than faking a saved record
+  ---
+  duration_ms: 0.5626
+  ...
+# Subtest: server does not serve secrets or filesystem traversal
+ok 22 - server does not serve secrets or filesystem traversal
+  ---
+  duration_ms: 0.4432
+  ...
+# (node:32644) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Pages artifact supports project subpaths and excludes the authenticated server
+ok 23 - Pages artifact supports project subpaths and excludes the authenticated server
+  ---
+  duration_ms: 373.8735
+  ...
+# (node:24856) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: resubmission withdraws the old pending revision
+ok 24 - resubmission withdraws the old pending revision
+  ---
+  duration_ms: 54.768
+  ...
+# Subtest: approval requires the exact revision
+ok 25 - approval requires the exact revision
+  ---
+  duration_ms: 4.6731
+  ...
+# Subtest: apply is once-only and preserves the old baseline
+ok 26 - apply is once-only and preserves the old baseline
+  ---
+  duration_ms: 6.8393
+  ...
+# Subtest: concurrent edits are detected
+ok 27 - concurrent edits are detected
+  ---
+  duration_ms: 4.2348
+  ...
+# Subtest: rejected and withdrawn proposals cannot be applied
+ok 28 - rejected and withdrawn proposals cannot be applied
+  ---
+  duration_ms: 10.587
+  ...
+# Subtest: client cannot apply and member cannot decide
+ok 29 - client cannot apply and member cannot decide
+  ---
+  duration_ms: 0.3857
+  ...
+# Subtest: client projection removes internal cost fields at all snapshot levels
+ok 30 - client projection removes internal cost fields at all snapshot levels
+  ---
+  duration_ms: 5.992
+  ...
+# Subtest: full baseline → request → compare → approve → apply journey
+ok 31 - full baseline → request → compare → approve → apply journey
+  ---
+  duration_ms: 3.9307
+  ...
+1..31
+# tests 31
+# suites 0
+# pass 31
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5403.169

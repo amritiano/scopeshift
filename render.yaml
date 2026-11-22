@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: scopeshift
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /api/config
+    envVars:
+      - key: NODE_VERSION
+        value: 22.14.0
+      - key: HOST
+        value: 0.0.0.0
+      - key: APP_ORIGIN
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false

@@ -1,0 +1,20 @@
+{
+  "name": "scopeshift",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.14" },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --experimental-strip-types src/server.ts",
+    "start": "node --env-file-if-exists=.env dist/server.js",
+    "build": "node scripts/build.mjs",
+    "build:pages": "node scripts/build.mjs && node scripts/build-pages.mjs",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "lint": "node scripts/check.mjs",
+    "format": "node scripts/check.mjs --write",
+    "format:check": "node scripts/check.mjs",
+    "typecheck": "tsc --noEmit",
+    "seed": "node --env-file-if-exists=.env --experimental-strip-types scripts/seed.ts",
+    "typecheck:full": "tsc --noEmit -p tsconfig.full.json"
+  }
+}

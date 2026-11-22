@@ -1,0 +1,13 @@
+export type Role = 'owner' | 'lead' | 'member' | 'client';
+export type Resource = { id: string; name: string; dailyHours: number; rateMinor: number; availableFrom: string };
+export type Task = { id: string; title: string; hours: number; resourceId: string; dependencies: string[]; acceptance: string };
+export type Plan = { start: string; deadline: string; timezone: string; currency: string; budgetMinor: number; weekdays: number[]; holidays: string[]; resources: Resource[]; tasks: Task[] };
+export type ScheduledTask = { id: string; start: string; finish: string; hours: number; costMinor: number; days: { date: string; hours: number }[] };
+export type Schedule = { effort: number; costMinor: number; headroomMinor: number; finish: string; feasible: boolean; warnings: string[]; tasks: ScheduledTask[]; utilization: { id: string; hours: number; available: number }[] };
+export type ScopeEdit = { kind: 'add' | 'modify' | 'remove'; task: Task };
+export type Change = { id: string; title: string; reason: string; requester: string; requestedDate: string; priority: 'low' | 'medium' | 'high'; assumptions: string; edits: ScopeEdit[] };
+export type Scenario = { id: string; title: string; tradeoff: string; plan: Plan; result: Schedule; inputRevision: number; assumptions: string[] };
+export type Proposal = { id: string; changeId: string; revision: number; baseRevision: number; scenario: Scenario; status: 'draft' | 'pending' | 'approved' | 'rejected' | 'withdrawn' | 'applied'; decision?: { actor: string; at: string; note: string; revision: number } };
+export type Baseline = { revision: number; plan: Plan; actor: string; at: string };
+export type Event = { id: string; actor: string; at: string; action: string; detail: string };
+export type Project = { id: string; name: string; client: string; version: number; role: Role; baselines: Baseline[]; draft: Plan; changes: Change[]; scenarios?: { changeId: string; items: Scenario[] }[]; proposals: Proposal[]; events: Event[]; notifications: { id: string; title: string; read: boolean }[] };

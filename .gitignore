@@ -1,0 +1,6 @@
+dist/
+pages/
+.env
+node_modules/
+coverage/
+*.log
